@@ -11,17 +11,53 @@ Some letters in Serbian alphabet are represented as two-letter in Latin script. 
 
 This table does exactly that - translates two letters from source file to particular letter in target file. Used for Latin -> Cyrillic transliteration.
 
+*Example*:
+
+```
+[Double]
+dž=џ
+Dž=Џ
+nj=њ
+```
+
 ### Single
 
 Simplest part - translation from particular letter from source file to particular letter in target file.
+
+*Example*:
+
+```
+[Single]
+š=ш
+đ=ђ
+č=ч
+```
 
 ### Fallback-Partial
 
 In some cases, two set of rules above won't produce correct result, usually due to [conjugation rules](https://en.wikipedia.org/wiki/Grammatical_conjugation). This aims to correct that, by annulating wrongly transliterated parts of the word.
 
+*Example*:
+
+```
+[Fallback-Partial]
+ањуг=анјуг
+аџив=аджив
+аџет=аджет
+```
+
 ### Fallback-Whole
 
 Finally, this section is for words which should stay non-modified (like foreign words or brands).
+
+*Example*:
+
+```
+[Fallback-Whole]
+Сyмбиан=Symbian
+Линуџ=Linux
+Мицрософт=Microsoft
+```
 
 ## Usage
 
