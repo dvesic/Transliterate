@@ -32,7 +32,22 @@ Module can be used from command line, supplying at least two files as a paramete
 
 *Example*:
 
+```
 py Transliterate.py lat2cir.ini -i latinica.txt -o cirilica.txt
+```
+
+From code, you need to prepare 4 dictionaries mentioned above, pack them in another and call *transliterate* function:
+
+```python
+trans_dict = {
+            "Double": double,
+            "Single": single,
+            "Partial": fb_partial,
+            "Replace": fb_whole
+            }
+...            
+transliterate(line, trans_dict)
+```
 
 ## Credits
 
