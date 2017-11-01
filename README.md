@@ -22,3 +22,18 @@ In some cases, two set of rules above won't produce correct result, usually due 
 ### Fallback-Whole
 
 Finally, this section is for words which should stay non-modified (like foreign words or brands).
+
+## Usage
+
+Module can be used from command line, supplying at least two files as a parameter:
+
+- INI file with transliteration rules
+- Input text file for transliteration
+
+*Example*:
+
+py Transliterate.py lat2cir.ini -i latinica.txt -o cirilica.txt
+
+## Credits
+
+Many thanks to [Aleksandar Urošević](https://twitter.com/urosevic) for initial help in creating this module!
