@@ -4,7 +4,7 @@ setup(
     name='Transliterate',
     version='0.1.0',
     packages=[''],
-    url='',
+    url='https://github.com/dvesic/Transliterate',
     license='MIT',
     author='Dejan Vesić',
     author_email='Dejan@Vesic.Org',
