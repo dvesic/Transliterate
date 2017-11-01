@@ -46,7 +46,7 @@ trans_dict = {
             "Replace": fb_whole
             }
 ...            
-transliterate(line, trans_dict)
+line_trans = transliterate(line, trans_dict)
 ```
 
 ## Credits
