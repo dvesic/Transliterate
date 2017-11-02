@@ -114,8 +114,9 @@ def trans_file(ini_file, in_text, out_file):
         file = sys.stdout
         is_stdout = True
     else:
-        if os.path.samefile(in_text, out_file):
-            return -3
+        if os.path.isfile(out_file):
+            if os.path.samefile(in_text, out_file):
+                return -3
         file = open(out_file, "w", encoding="utf8")
 
     # Real work
